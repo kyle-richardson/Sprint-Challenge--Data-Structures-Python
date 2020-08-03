@@ -21,7 +21,7 @@ class BSTNode:
     def insert(self, value):
         if self.value is None:
             self.value = value
-        if value < self.value:
+        elif value < self.value:
             if self.left is None:
                 self.left = BSTNode(value)
             else:
